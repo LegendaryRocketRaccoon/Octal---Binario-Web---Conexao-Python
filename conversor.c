@@ -35,7 +35,7 @@ int validar_binario(const char *numero_str) {
 
 int octal_para_binario(const char *numero_octal, char *resultado) {
     if (!validar_octal(numero_octal)) {
-        printf("[ERRO] Numero octal invalido! Use apenas digitos de 0 a 7.\n");
+        printf("[ERRO] Numero octal invalido. Use apenas digitos de 0 a 7.\n");
         return 0;
     }
     
@@ -72,7 +72,7 @@ int octal_para_binario(const char *numero_octal, char *resultado) {
 
 int binario_para_octal(const char *numero_binario, char *resultado) {
     if (!validar_binario(numero_binario)) {
-        printf("[ERRO] Numero binario invalido! Use apenas digitos 0 e 1.\n");
+        printf("[ERRO] Numero binario invalido. Use apenas digitos 0 e 1.\n");
         return 0;
     }
     
@@ -152,7 +152,7 @@ int main(int argc, char *argv[]) {
             return 1;
         }
         else {
-            printf("[ERRO] Opcao invalida!\n");
+            printf("[ERRO] Opcao invalida.\n");
             return 1;
         }
     }
@@ -177,7 +177,7 @@ int main(int argc, char *argv[]) {
         printf("\nDigite sua opcao (0, 1 ou 2): ");
         
         if (scanf("%d", &opcao) != 1) {
-            printf("\n[ERRO] Entrada invalida!\n");
+            printf("\n[ERRO] Entrada invalida.\n");
             while (getchar() != '\n');
             continue;
         }
@@ -214,7 +214,7 @@ int main(int argc, char *argv[]) {
             }
         }
         else {
-            printf("\n[ERRO] Opcao invalida!\n");
+            printf("\n[ERRO] Opcao invalida.\n");
         }
     }
     
