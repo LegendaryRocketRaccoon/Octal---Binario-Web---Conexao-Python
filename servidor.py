@@ -6,7 +6,6 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-
 import platform
 if platform.system() == 'Windows':
     EXECUTAVEL_C = 'conversor.exe'
@@ -99,7 +98,7 @@ def testar():
     """Endpoint para testar se o servidor está funcionando"""
     return jsonify({
         'status': 'OK',
-        'mensagem': 'Servidor funcionando!',
+        'mensagem': 'Servidor funcionando.',
         'executavel_existe': os.path.exists(EXECUTAVEL_C)
     })
 
